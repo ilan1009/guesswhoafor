@@ -14,7 +14,7 @@ function characterPlay(){
     
     var text = document.getElementById("character-text");
     text.textContent = msg;
-    text.style.fontSize = "3vw";
+    text.style.fontSize = "";
 
     //var audio = new Audio('sounds/lie-detector-meme.mp3');
     //audio.play();

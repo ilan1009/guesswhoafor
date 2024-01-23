@@ -79,8 +79,8 @@ body{
 .bubble {
     position: absolute;
     top: 0px;
-    width: 300px;
-    left: -200px;
+    width: 15vw;
+    left: -10vw;
 }
 
 .bubble-image {
@@ -108,4 +108,26 @@ body{
 
 #canvas{
     position: fixed;
+}
+
+@media only screen and (max-width: 900px) {
+    /* Styles for small screens */
+    .guess-box {
+        width: 100vw;
+        left:50%;
+        height:40%;
+        top: 90%;
+    }
+    .guess-box .hebrew-text {
+        font-size: 10vw;
+    }
+
+    .bubble {
+        width: 50vw;
+        left: -35vw;
+    }
+
+    .bubble .hebrew-text {
+        font-size: 10vw;
+    }
 }
