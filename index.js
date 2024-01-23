@@ -6,7 +6,7 @@ function characterPlay(){
     var x = document.getElementsByClassName("bubble")[0];
     if (i >= msgs.length){
         i = 0;
-        document.getElementsByClassName("guess-box")[0].style.visibility="visible";
+        document.getElementsByClassName("guess-box")[0].style.display="block";
         
     } 
     let msg = msgs[i++];
