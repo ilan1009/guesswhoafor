@@ -130,4 +130,11 @@ body{
     .bubble .hebrew-text {
         font-size: 10vw;
     }
+    .holder {
+        right: 0%;
+    }
+    .holder img {
+        width: 60vw
+    }
+
 }
