@@ -110,7 +110,7 @@ body{
     position: fixed;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     /* Styles for small screens */
     .guess-box {
         width: 100%;
