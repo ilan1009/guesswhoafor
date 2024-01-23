@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="halftone.css">
+        <link rel="stylesheet" href="imagetransition.css">
+
+        <script src="index.js"></script> 
+
+
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <div class="guess-box" style="visibility: hidden" >
+            <h1 class="hebrew-text"">מוכנים לראות את התשובה?</h1>
+            <div class="buttons-holder">
+                <button class="hebrew-text" id="yes-button" onclick="showAnswer()">כן תראה</button>
+                <button class="hebrew-text" id="cancel-button" onclick="cancel()">חכה רגע</button>
+            </div>
+        </div>
+        <div class="title comic">
+            <h1 class="maintitle" style="font-size: 4rem;">
+                Guess who!
+            </h1>
+            <h1 id="stickertext" onclick="nigger()">AFOR SPECIAL EDITION</h1>
+
+        </div>
+
+        <div class="holder">
+            <div class="fadein">
+                <img class="character image1" style="z-index: 2;" src="characters/my-image-blurred.png" onclick="characterPlay()">
+                <img class="character image2" style="z-index: 1;" src="characters/my-image.png" id="image_resize" ">
+
+            </div>
+           
+            <div class="bubble">
+                <img class="bubble-image" src="speechbubble.png" >
+                <h2 class="hebrew-text" id="character-text" style="font-size:2rem">לחצו בדמות המוסתרת כדי להתחיל</h2>
+            </div>
+        </div>
+        <div class="halftone"></div>
+        <script src="animate.js"></script> 
+    </body>
+</html>

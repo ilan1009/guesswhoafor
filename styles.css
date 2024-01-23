@@ -1,0 +1,111 @@
+:root{
+    --dull-red: rgba(205,41,47,255);
+    --spiegel-shell: rgba(236,231,187,255);
+}
+
+body{
+    background-color: antiquewhite;
+    /* background-image: url("vintage.jpg"); */
+    padding: 0px;
+}
+
+.comic{
+    font-family: "BadaBoom BB";
+}
+
+.hebrew-text{
+    font-family: "Handjet";
+    direction: rtl;
+
+
+}
+
+.character{
+    position: absolute;
+}
+
+.title{
+    background-color: rgb(20,18,19);
+    border: double;
+    border-color: rgb(100,118,119);
+
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+    color: var(--spiegel-shell)
+}
+
+.title .maintitle {
+/*     text-shadow: -0.3rem 0 var(--dull-red), 0 0.3rem var(--dull-red), 0.3rem 0 var(--dull-red), 0 -0.3rem var(--dull-red); */
+    -webkit-text-stroke: 0.3rem var(--dull-red); /* width and color */;
+}
+
+.guess-box{
+    position: fixed;
+    background-color: rgb(20,18,19);
+    border-style: double;
+    border-color: rgb(100,118,119);
+    width: 30%; height: 20%;
+    z-index: 400;
+    top:60%;
+    left:20%;
+    transform: translate(-50%, -50%);
+}
+
+.guess-box .hebrew-text{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+.buttons-holder{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+
+.buttons-holder button{
+    width: 45%;
+}
+
+
+
+.holder{
+    position: absolute;
+    left: 40%;
+}
+
+.bubble {
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    left: -200px;
+}
+
+.bubble-image {
+    width: 100%;
+}
+
+.bubble .hebrew-text {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: right;
+    max-width: 75%;
+    max-height: 60%;
+    /* overflow: hidden; */
+    font-size: 3vw;
+}
+
+
+
+#stickertext{
+    margin-left: 1rem;
+}
+
+#canvas{
+    position: fixed;
+}
