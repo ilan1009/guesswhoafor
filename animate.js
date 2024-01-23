@@ -49,7 +49,7 @@ function imagebouncing(){
     
     // Image properties
     const image = new Image();
-    image.src = 'gifgif.gif'; // Replace with your image path
+    image.src = 'characters/my-image.png'; // Replace with your image path
     const imageSize = Math.random() * (200); // Adjust the size of the image
     
     // Initial position and velocity
