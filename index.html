@@ -2,20 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="halftone.css">
         <link rel="stylesheet" href="imagetransition.css">
+        <link rel="stylesheet" href="lieDetector.css">
 
         <script src="index.js"></script> 
 
 
     </head>
     <body>
+
         <canvas id="canvas"></canvas>
         <div class="guess-box" >
-            <h1 class="hebrew-text"">מוכנים לראות את התשובה?</h1>
+            <h1 class="hebrew-text guess-text">מוכנים לראות את התשובה?</h1>
             <div class="buttons-holder">
                 <button class="hebrew-text" id="yes-button" onclick="showAnswer()">כן תראה</button>
                 <button class="hebrew-text" id="cancel-button" onclick="cancel()">חכה רגע</button>
@@ -32,7 +33,7 @@
         <div class="holder">
             <div class="fadein">
                 <img class="character image1" style="z-index: 2;" src="characters/my-image-blurred.png" onclick="characterPlay()">
-                <img class="character image2" style="z-index: 1;" src="characters/my-image.png" id="image_resize" ">
+                <img class="character image2" style="z-index: 1;" src="characters/my-image.png" id="image_resize">
 
             </div>
            
@@ -43,5 +44,8 @@
         </div>
         <div class="halftone"></div>
         <script src="animate.js"></script> 
+
+        <img id="fadingImage" src="Untitled.jpeg"  alt="Fading Image">
+
     </body>
 </html>

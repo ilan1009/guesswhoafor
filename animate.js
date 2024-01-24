@@ -83,3 +83,25 @@ function imagebouncing(){
     };
     
 }
+
+
+function lie() {
+    var fadeTarget = document.getElementById("fadingImage");
+    var audio = new Audio('./sounds/lie-detector-meme.mp3');
+    console.log(audio.duration);
+    fadeTarget.style.zIndex = 500;
+    audio.play();
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.01;
+        } else  {
+            clearInterval(fadeEffect);
+            fadeTarget.style.zIndex = -500;
+            fadeTarget.style.opacity = 1;
+        }
+    }, 20);
+
+}

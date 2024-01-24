@@ -1,4 +1,5 @@
-const msgs = ["לא אכלתי כלום היום", "אתה מת", "מי חבר שך'!", "גואטג'ו "]
+const msgs = ["אתה מת", "לא אכלתי כלום היום", "מי חבר שך'!", "גוג'ו אבא שלי", "אני מדבר עם החברות שלי"]
+const lies = [msgs[1], msgs[4]]
 console.log(msgs[0])
 
 let i = 0;
@@ -10,14 +11,13 @@ function characterPlay(){
         
     } 
     let msg = msgs[i++];
-
-    
+    if (lies.includes(msg)){
+        lie();
+    }
     var text = document.getElementById("character-text");
     text.textContent = msg;
-    text.style.fontSize = "";
 
-    //var audio = new Audio('sounds/lie-detector-meme.mp3');
-    //audio.play();
+
 }
 
 function toggleSpeechBubble() {

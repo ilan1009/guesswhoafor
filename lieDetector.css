@@ -1,0 +1,14 @@
+#fadingImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    #fadingImage {
+        height: 50vh;
+    }
+}
