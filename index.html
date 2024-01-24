@@ -13,39 +13,40 @@
 
     </head>
     <body>
-
-        <canvas id="canvas"></canvas>
-        <div class="guess-box" >
-            <h1 class="hebrew-text guess-text">מוכנים לראות את התשובה?</h1>
-            <div class="buttons-holder">
-                <button class="hebrew-text" id="yes-button" onclick="showAnswer()">כן תראה</button>
-                <button class="hebrew-text" id="cancel-button" onclick="cancel()">חכה רגע</button>
+        <site class=".site">
+            <canvas id="canvas"></canvas>
+            <div class="guess-box" >
+                <h1 class="hebrew-text guess-text">מוכנים לראות את התשובה?</h1>
+                <div class="buttons-holder">
+                    <button class="hebrew-text" id="yes-button" onclick="showAnswer()">כן תראה</button>
+                    <button class="hebrew-text" id="cancel-button" onclick="cancel()">חכה רגע</button>
+                </div>
             </div>
-        </div>
-        <div class="title comic">
-            <h1 class="maintitle" style="font-size: 4rem;">
-                Guess who!
-            </h1>
-            <h1 id="stickertext" onclick="imagebouncing()">AFOR SPECIAL EDITION</h1>
-
-        </div>
-
-        <div class="holder">
-            <div class="fadein">
-                <img class="character image1" style="z-index: 2;" src="characters/my-image-blurred.png" onclick="characterPlay()">
-                <img class="character image2" style="z-index: 1;" src="characters/my-image.png" id="image_resize">
-
+            <div class="title comic">
+                <h1 class="maintitle">
+                    Guess who!
+                </h1>
+                <h1 id="stickertext" onclick="imagebouncing()">AFOR SPECIAL EDITION</h1>
+    
             </div>
-           
-            <div class="bubble">
-                <img class="bubble-image" src="speechbubble.png" >
-                <h2 class="hebrew-text" id="character-text">לחצו כדי להתחיל</h2>
+    
+            <div class="holder">
+                <div class="fadein">
+                    <img class="character image1" style="z-index: 2;" src="characters/my-image-blurred.png" onclick="characterPlay()">
+                    <img class="character image2" style="z-index: 1;" src="characters/my-image.png" id="image_resize">
+    
+                </div>
+               
+                <div class="bubble">
+                    <img class="bubble-image" src="speechbubble.png" >
+                    <h2 class="hebrew-text" id="character-text">לחצו כדי להתחיל</h2>
+                </div>
             </div>
-        </div>
-        <div class="halftone"></div>
-        <script src="animate.js"></script> 
+            <div class="halftone"></div>
+            <script src="animate.js"></script> 
+    
+            <img id="fadingImage" src="Untitled.jpeg"  alt="Fading Image">
 
-        <img id="fadingImage" src="Untitled.jpeg"  alt="Fading Image">
-
+        </site>
     </body>
 </html>

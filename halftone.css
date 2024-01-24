@@ -8,8 +8,8 @@
     z-index: -1;
     top: 0px;
     left: 0px;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     background: white;
     filter: contrast(50);
   }
@@ -23,6 +23,5 @@
     background-size: 1rem 1rem;
     background-repeat: round;
     background-position: center;
-    border: 4px solid;
     mask-image: var(--mask);
   }

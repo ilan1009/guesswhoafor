@@ -4,11 +4,14 @@
 }
 
 body{
-    background-color: antiquewhite;
     /* background-image: url("vintage.jpg"); */
     padding: 0px;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
 }
+
+
 
 .comic{
     font-family: "BadaBoom BB";
@@ -22,7 +25,8 @@ body{
 }
 
 .character{
-    position: absolute;
+    position: absolute; 
+    overflow-x: hidden;
 }
 
 .character{
@@ -52,9 +56,8 @@ body{
     border-color: rgb(100,118,119);
     width: 30%; height: 20%;
     z-index: 400;
-    top:80%;
-    left:20%;
-    transform: translate(-50%, -50%);
+    top:60%;
+    left:10%;
 }
 
 .guess-box .hebrew-text{
@@ -129,17 +132,25 @@ body{
     /* Styles for small screens */
     .guess-box {
         width: 100%;
-        left:50%;
-        height:40%;
-        top: 90%;
+        left:0%;
+        height:30%;
+        bottom: 0%;
     }
     .guess-box .hebrew-text {
-        font-size: 6rem;
+        font-size: 2rem;
 
+    }
+    .maintitle{
+        font-size: 7vw;
+        width: 90vw;
+    }
+
+    #stickertext{
+        font-size: 3vw;;
     }
 
     .bubble .hebrew-text {
-        font-size: 5rem;
+        font-size: 7vw;
         position: absolute;
         top: 40%;
         /* transform: translate(0px, -50%);  */
@@ -148,16 +159,16 @@ body{
     .bubble {
         width: 80vw;
         left: -80%;
-        top: -200px;
+        top: -10vh;
     }
-
 
     .holder {
         right: 0%;
         bottom: 80%;
     }
     .holder img {
-        width: 80vw
+        width: 100%;
+        right: -20%;
     }
 
 
